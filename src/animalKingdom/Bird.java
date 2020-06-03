@@ -1,22 +1,9 @@
 package animalKingdom;
 
-public class Bird extends Animal
+public class Bird extends Animal 
 {
-    private String name;
-    
-    public Bird(String name, int stomach)
+    public Bird(String name, int stomach, int discovered)
     {
-        this.name = name;
-        this.stomach = stomach;
-    }
-
-    public Bird(String name)
-    {
-        this.name = name;
-    }
-    @Override
-    public String getName()
-    {
-        return name;
+        super(name, stomach, discovered);
     }
 }

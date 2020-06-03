@@ -2,19 +2,46 @@ package animalKingdom;
 
 abstract class Animal 
 {
-    protected int id;
     protected String name;
-    protected int discovered;
     protected int stomach;
-    
-    abstract String getName();
+    protected int discovered;
+    public Animal()
+    {
+        stomach = 1;
+    }
+    public Animal(String name, int stomach, int discovered)
+    {
+        this.name = name;
+        this.stomach = stomach;
+        this.discovered = discovered;
+    }
 
+    void move()
+    {
+        stomach--;
+    }
+
+    int getStomach() {
+        return stomach;
+    }
+
+    String getName()
+    {
+        return name;
+    }
     void consume(int food)
     {
         stomach =+ food;
     }
 
-    void move();
-    void breathe();
-    void reproduce();
+    int getDiscovered() {
+        return discovered;
+    }
+     
+
+    @Override
+    public String toString()
+    {
+        return "Animal: " + "Name: " + name + " Discovered: " + discovered;
+    }
 }

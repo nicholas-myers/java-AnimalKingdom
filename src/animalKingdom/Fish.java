@@ -1,21 +1,9 @@
 package animalKingdom;
 
-public class Fish extends Animal {
-    private String name;
-    
-    public Fish(String name, int stomach)
+public class Fish extends Animal 
+{
+    public Fish(String name, int stomach, int discovered)
     {
-        this.name = name;
-        this.stomach = stomach;
-    }
-
-    public Fish(String name)
-    {
-        this.name = name;
-    }
-    @Override
-    public String getName()
-    {
-        return name;
+        super(name, stomach, discovered);
     }
 }
