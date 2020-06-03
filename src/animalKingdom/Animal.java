@@ -1,12 +1,14 @@
 package animalKingdom;
 
-public class AbstractAnimal 
+abstract class Animal 
 {
     protected int id;
     protected String name;
     protected int discovered;
     protected int stomach;
     
+    abstract String getName();
+
     void consume(int food)
     {
         stomach =+ food;
