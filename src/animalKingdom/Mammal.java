@@ -13,4 +13,14 @@ public class Mammal extends Animal
     {
         return name + " walks " + moved + " steps";
     }
+    @Override
+    public String breathes()
+    {
+        return name + " breathes air through lungs";
+    }
+    @Override
+    public String reproduces()
+    {
+        return name + " reproduces by giving live birth";
+    }
 }

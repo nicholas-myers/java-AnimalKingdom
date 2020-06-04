@@ -17,6 +17,8 @@ abstract class Animal
     }
 
     abstract String moves(int moved);
+    abstract String breathes();
+    abstract String reproduces();
 
     int getStomach() {
         return stomach;

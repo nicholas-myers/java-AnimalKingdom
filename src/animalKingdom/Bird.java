@@ -11,4 +11,14 @@ public class Bird extends Animal
     {
         return name + " flies " + moved + " miles";
     }
+    @Override
+    public String breathes()
+    {
+        return name + " breathes air through lungs";
+    }
+    @Override
+    public String reproduces()
+    {
+        return name + " reproduces by laying eggs";
+    }
 }

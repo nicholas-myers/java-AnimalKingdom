@@ -44,6 +44,12 @@ public class Main
         System.out.println(panda.moves(5));
         System.out.println(pigeon.moves(5));
         System.out.println(salmon.moves(5));
+        System.out.println(panda.breathes());
+        System.out.println(pigeon.breathes());
+        System.out.println(salmon.breathes());
+        System.out.println(panda.reproduces());
+        System.out.println(pigeon.reproduces());
+        System.out.println(salmon.reproduces());
         
     }
 }

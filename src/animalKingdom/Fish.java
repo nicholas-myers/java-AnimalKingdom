@@ -11,4 +11,14 @@ public class Fish extends Animal
     {
         return name + " swim " + moved + " leagues";
     }
+    @Override
+    public String breathes()
+    {
+        return name + " dissolves oxygen through gills";
+    }
+    @Override
+    public String reproduces()
+    {
+        return name + " reproduces by laying eggs";
+    }
 }
