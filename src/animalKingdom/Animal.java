@@ -29,7 +29,9 @@ abstract class Animal
     {
         return name;
     }
-    void consume(int food)
+
+    
+    void toStomach(int food)
     {
         stomach =+ food;
     }
@@ -37,11 +39,16 @@ abstract class Animal
     int getDiscovered() {
         return discovered;
     }
-     
+
+    public String consumes(int amount, String food)
+    {
+        stomach =+ amount;
+        return name + " eats " + amount + " " + food;
+    }
 
     @Override
     public String toString()
     {
-        return "Animal: " + "Name: " + name + " Discovered: " + discovered;
+        return "| " + name + " | " + discovered + " |";
     }
 }

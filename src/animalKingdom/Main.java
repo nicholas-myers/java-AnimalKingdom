@@ -5,7 +5,7 @@ public class Main
     public static void main(String[] args) 
     {
         System.out.println("This is Happening");
-        System.out.println("\n\n*** MAMMALS ***");
+        System.out.println("\n\n| MAMMALS | Discovered |\n");
         Mammal panda = new Mammal("Panda", 1, 1869);
         Mammal zebra = new Mammal("Zebra", 1, 1778);
         Mammal koala = new Mammal("Koala", 1, 1816);
@@ -20,17 +20,26 @@ public class Main
         System.out.println(armadillo.toString());
         System.out.println(raccoon.toString());
         System.out.println(bigfoot.toString());
-        System.out.println("\n*** BIRDS ***\n");
-        Bird pigeon = new Bird("Pigeon", 1, 1869);
-        Bird peacock = new Bird("Peacock", 1, 1778);
-        Bird toucan = new Bird("Toucan", 1, 1816);
-        Bird parrot = new Bird("Parrot", 1, 1804);
+        System.out.println("\n\n| BIRDS | Discovered |\n");
+        Bird pigeon = new Bird("Pigeon", 1, 1837);
+        Bird peacock = new Bird("Peacock", 1, 1821);
+        Bird toucan = new Bird("Toucan", 1, 1758);
+        Bird parrot = new Bird("Parrot", 1, 1824);
         Bird swan = new Bird("Swan", 1, 1758);
         System.out.println(pigeon.toString());
         System.out.println(peacock.toString());
         System.out.println(toucan.toString());
         System.out.println(parrot.toString());
         System.out.println(swan.toString());
-
+        System.out.println("\n\n| FISH | Discovered |\n");
+        Bird salmon = new Bird("Salmon", 1, 1758);
+        Bird catfish = new Bird("Catfish", 1, 1817);
+        Bird perch = new Bird("Perch", 1, 1758);
+        System.out.println(salmon.toString());
+        System.out.println(catfish.toString());
+        System.out.println(perch.toString());
+        System.out.println("\n*** Test Methods ***\n");
+        System.out.println(panda.consumes(10, "bamboo"));
+        System.out.println(panda.getStomach());
     }
 }
