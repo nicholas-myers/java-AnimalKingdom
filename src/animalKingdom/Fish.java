@@ -6,4 +6,9 @@ public class Fish extends Animal
     {
         super(name, stomach, discovered);
     }
+    @Override
+    public String moves(int moved)
+    {
+        return name + " swim " + moved + " leagues";
+    }
 }

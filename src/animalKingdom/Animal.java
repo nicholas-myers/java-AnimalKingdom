@@ -16,10 +16,7 @@ abstract class Animal
         this.discovered = discovered;
     }
 
-    void move()
-    {
-        stomach--;
-    }
+    abstract String moves(int moved);
 
     int getStomach() {
         return stomach;
@@ -33,16 +30,17 @@ abstract class Animal
     
     void toStomach(int food)
     {
-        stomach =+ food;
+        this.stomach =+ food;
     }
 
     int getDiscovered() {
         return discovered;
     }
 
+    
     public String consumes(int amount, String food)
     {
-        stomach =+ amount;
+        toStomach(amount);
         return name + " eats " + amount + " " + food;
     }
 

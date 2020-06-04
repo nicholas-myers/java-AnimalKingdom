@@ -6,4 +6,9 @@ public class Bird extends Animal
     {
         super(name, stomach, discovered);
     }
+    @Override
+    public String moves(int moved)
+    {
+        return name + " flies " + moved + " miles";
+    }
 }

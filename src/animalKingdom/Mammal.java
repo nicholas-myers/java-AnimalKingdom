@@ -6,4 +6,11 @@ public class Mammal extends Animal
     {
         super(name, stomach, discovered);
     }
+
+
+    @Override
+    public String moves(int moved)
+    {
+        return name + " walks " + moved + " steps";
+    }
 }

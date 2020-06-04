@@ -32,14 +32,18 @@ public class Main
         System.out.println(parrot.toString());
         System.out.println(swan.toString());
         System.out.println("\n\n| FISH | Discovered |\n");
-        Bird salmon = new Bird("Salmon", 1, 1758);
-        Bird catfish = new Bird("Catfish", 1, 1817);
-        Bird perch = new Bird("Perch", 1, 1758);
+        Fish salmon = new Fish("Salmon", 1, 1758);
+        Fish catfish = new Fish("Catfish", 1, 1817);
+        Fish perch = new Fish("Perch", 1, 1758);
         System.out.println(salmon.toString());
         System.out.println(catfish.toString());
         System.out.println(perch.toString());
         System.out.println("\n*** Test Methods ***\n");
         System.out.println(panda.consumes(10, "bamboo"));
-        System.out.println(panda.getStomach());
+        // System.out.println(panda.getStomach());
+        System.out.println(panda.moves(5));
+        System.out.println(pigeon.moves(5));
+        System.out.println(salmon.moves(5));
+        
     }
 }
